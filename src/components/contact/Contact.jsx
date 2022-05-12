@@ -7,7 +7,7 @@ import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
 
-function Contact(onSubmitContact) {
+function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -42,7 +42,7 @@ function Contact(onSubmitContact) {
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+55 18 99656-3354</h5>
-            <a href="https://api.whatsapp.com/send?phone=+5518996563354" target='_blank'>Send a message</a>
+            <a href="https://wa.me/5518996563354" target='_blank'>Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
