@@ -1,14 +1,13 @@
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
 import {BsWhatsapp} from 'react-icons/bs'
 import {FiInstagram} from 'react-icons/fi'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 
 
-const Contact = () => {
+function Contact(onSubmitContact) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -48,11 +47,13 @@ const Contact = () => {
         </div>
         {/* END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Seu nome completo' required />
-          <input type="email" name="email" placeholder='Seu email' required />
-          <textarea name="message" rows="7" placeholder='Sua mensagem' required></textarea>
-          <button type='submit' className='btn btn-primary'>Enviar</button>
+          <input type="text" name='name' placeholder='Nome completo' required />
+          <input type="email" name="email" placeholder='Email' required />
+          <textarea name="message" rows="7" placeholder='Mensagem' required></textarea>
+          <button type='submit' onClick={onSubmitContact} className='btn btn-primary'>Enviar</button>
         </form>
+
+        <button type='button' onClick={onSubmitContact} className='btn'>Teste</button>
       </div>
     </section>
   )

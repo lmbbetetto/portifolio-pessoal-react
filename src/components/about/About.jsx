@@ -35,7 +35,7 @@ const About = () => {
         </div>
 
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos molestiae cupiditate, accusamus, perferendis ad eos natus deserunt itaque quasi esse quaerat nostrum asperiores officia voluptate repudiandae? Nostrum, nobis molestiae.
+        Me chamo Leonardo Manoel, moro no interior de São Paulo, estudando o 1º ano de Analise e desenvolvimento de sistemas, focando na área front-end, voltado em Html, Css, JavaScript, Node e ReactJS, procurando criar soluções em sites e sistemas web.
         </p>
 
         <a href="#contact" className='btn btn-primary'>Vamos Conversar</a>

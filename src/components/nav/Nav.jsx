@@ -9,7 +9,7 @@ import {AiFillTags} from 'react-icons/ai'
 import {FaFlagUsa} from 'react-icons/fa'
 import {useState} from 'react'
 
-const Nav = () => {
+function Nav() {
   const [activeNav, setActiveNav] = useState('#');
   return (
     <nav>

@@ -5,7 +5,7 @@ import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
       <a href="#" className='footer__logo'>LEONARDO BETETTO</a>

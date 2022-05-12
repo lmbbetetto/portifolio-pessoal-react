@@ -4,7 +4,7 @@ import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
 
-const Portifolio = () => {
+function Portifolio() {
   return (
     <section id='portfolio'>
       <h5>Meus trabalhos</h5>
